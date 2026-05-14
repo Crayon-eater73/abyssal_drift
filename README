@@ -1,0 +1,51 @@
+# Abyssal Drift
+A simaple text-based game in an active apocalyptic world, where the player is stuck in a hosptial and actively trying to escape before they perish. 
+
+Below are referances and documentation of how this project went as it is for my coding final
+
+# tools
+1: VScode
+
+2: Youtube
+
+3: Building Java programs book
+
+4: Websites
+
+4: The latest version of Java
+
+5: JDK 26
+
+# Referances
+
+## Websites
+Website one: https://www.hashbangcode.com/article/creating-text-adventure-game-godot
+
+This helped me understand what I needed to make a simaple text based game, very helpful with the control interfance and what should be in it.
+
+Website two: https://code.visualstudio.com/
+
+VScode's layout was hard to understand at first, but I went to the offical site and this helped with my layout
+
+## Videos
+Video one JFrame: https://www.youtube.com/watch?v=5G2XM1nlX5Q 
+
+This was reference one for remembering how to add a JFrame
+
+Video two JFrame: https://www.youtube.com/watch?v=WOooJ_165xY
+
+This was reference two for remembering how to add a JFrame
+
+## Books
+Book one: Building Java Programs A BACK TO BASICS APPROACH 5e by Stuart Reges and Marty Stepp
+
+# Documentation and progress
+
+## Day one
+Day one was where I gathered my referances and started laying everything out. I used notepad to get a feel of what the game would be like and the plot. I asked some people that I knew what would be a good start or if it was too simple. This project can't be too simple and I can't bite off more than I can chew, so it was very difficult to try and find a middle ground. I know thi project is going to be very repetitive and Ihave to add some elements to make the coding more complex.
+
+# Trouble shooting
+In day one, I already ran into an issue that VScode done that I did know of. It put all my folders into the same folder if nothing was in it, and not a subfolder. What had happened was, there was a box checked that grouped my folders. So once I unchecked it, it allowed my to add subfolders.
+
+# A special thanks
+    I would like to thank the people I reached out to that helped me build the plot and play tested the game. Even if it's just a small scene that didn't take long to play, it still ment a lot.
