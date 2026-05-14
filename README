@@ -4,17 +4,17 @@ A simaple text-based game in an active apocalyptic world, where the player is st
 Below are referances and documentation of how this project went as it is for my coding final
 
 # tools
-1: VScode
+1. VScode
 
-2: Youtube
+2. Youtube
 
-3: Building Java programs book
+3. Building Java programs book
 
-4: Websites
+4. Websites
 
-4: The latest version of Java
+5. The latest version of Java
 
-5: JDK 26
+6. JDK 26
 
 # Referances
 
@@ -30,11 +30,15 @@ VScode's layout was hard to understand at first, but I went to the offical site 
 ## Videos
 Video one JFrame: https://www.youtube.com/watch?v=5G2XM1nlX5Q 
 
-This was reference one for remembering how to add a JFrame
+This was reference one for remembering how to add a JFrame.
 
 Video two JFrame: https://www.youtube.com/watch?v=WOooJ_165xY
 
-This was reference two for remembering how to add a JFrame
+This was reference two for remembering how to add a JFrame.
+
+Video three: https://www.youtube.com/watch?v=HX2CRPUVjMU
+
+Pushing my projects into github so I don't have to manually update everything. It was very helpful and detailed.
 
 ## Books
 Book one: Building Java Programs A BACK TO BASICS APPROACH 5e by Stuart Reges and Marty Stepp
