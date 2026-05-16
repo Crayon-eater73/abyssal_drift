@@ -14,5 +14,6 @@ public class frame {
         window.pack();
         window.setLocationRelativeTo(null);
         window.setVisible(true);
+
     }
 }

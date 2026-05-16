@@ -13,6 +13,7 @@ public class panel extends JPanel {
 
     final int screenWidth = tileSize * maxScreenLong;
     final int screenHeight = tileSize * maxScreenLan;
+    
 
     public panel() {
         setPreferredSize(new Dimension(screenWidth, screenHeight));
