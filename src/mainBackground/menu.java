@@ -18,9 +18,10 @@ public class menu {
        System.out.println();
        System.out.println("Quit");
        System.out.println();
+       System.out.println("Pick your choice: ");
 
        String player = scanner.nextLine();
-
+       
        if(player.equals("New Game")) {
               newGame();
        } else if (player.equals("Continue")) {
@@ -30,7 +31,7 @@ public class menu {
        } else if (player.equals("Quit")) {
               quitGame();
        } else {
-              System.out.println("Invalid choice. Tye again.");
+              System.out.println("Invalid choice. Try again.");
        }
 
        scanner.close();
@@ -38,18 +39,26 @@ public class menu {
        }
 
        public static void newGame() {
-              System.out.println("Let's start the journey...");
+              System.out.println();
+              System.out.println("Let me start from the beginning...");
+              System.out.println();
        }
 
        public static void continueGame() {
-              System.out.println("Let's continue this journey...");
+              System.out.println();
+              System.out.println("As I left off...");
+              System.out.println();
        }
 
        public static void loadGame() {
-              System.out.println("Load you jorney from any saves");
+              System.out.println();
+              System.out.println("Where do I need to strt from?");
+              System.out.println();
        }
 
        public static void quitGame() {
+              System.out.println();
               System.out.println("Take a break");
+              System.out.println();
        }
 }
