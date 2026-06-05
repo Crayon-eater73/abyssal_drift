@@ -3,6 +3,10 @@ package mainBackground;
 import java.awt.*;
 import java.io.File;
 import javax.swing.*;
+import mainBackground.mainMenu.ContinuePanel;
+import mainBackground.mainMenu.gamePanel;
+import mainBackground.mainMenu.loadPanel;
+import mainBackground.mainMenu.settingPanel;
 
 public class Panel extends JPanel {
 
@@ -67,7 +71,7 @@ public class Panel extends JPanel {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("Continue clicked");
-                window.changePanel(new gamePanel(window));
+                window.changePanel(new ContinuePanel(window));
             }
         });
 
@@ -82,7 +86,7 @@ public class Panel extends JPanel {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("Load Game clicked");
-                window.changePanel(new gamePanel(window));
+                window.changePanel(new loadPanel(window));
             }
         });
 
@@ -97,7 +101,7 @@ public class Panel extends JPanel {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.out.println("Settings clicked");
-                window.changePanel(new gamePanel(window));
+                window.changePanel(new settingPanel(window));
             }
         });
 

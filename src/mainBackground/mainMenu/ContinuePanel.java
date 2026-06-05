@@ -1,19 +1,21 @@
-package mainBackground;
+package mainBackground.mainMenu;
 
 import java.awt.*;
 import javax.swing.*;
+import mainBackground.Panel;
+import mainBackground.frame;
 
-public class gamePanel extends JPanel {
+public class ContinuePanel extends JPanel {
 
     private frame window;
 
-    public gamePanel(frame window) {
+    public ContinuePanel(frame window) {
         this.window = window;
 
         setPreferredSize(new Dimension(800, 600));
-        setBackground(Color.DARK_GRAY);
+        setBackground(Color.BLACK);
 
-        JLabel label = new JLabel("Game Started!");
+        JLabel label = new JLabel("As I was saying...");
         label.setForeground(Color.WHITE);
         label.setFont(new Font("Serif", Font.BOLD, 32));
         add(label);

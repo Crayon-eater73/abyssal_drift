@@ -1,0 +1,9 @@
+[SCENE]: final_confrontation
+
+[TEXT_START]
+No matter which way you turn, the exit is cut off. The shadows pool together as Dal steps fully into the moonlight, blocking the only remaining path. 
+
+The air grows freezing cold, and the trap is completely sprung. 
+
+There is nowhere left to run.
+[TEXT_END]

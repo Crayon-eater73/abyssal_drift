@@ -1,0 +1,11 @@
+[SCENE]: mae_screams
+
+[TEXT_START]
+*Screams*
+Ace froze the moment he heard Mae's scream.
+
+What should he do?
+[TEXT_END]
+
+[CHOICE]: Hide behind a desk -> ace_hides
+[CHOICE]: Run and investigate -> investigate_scream

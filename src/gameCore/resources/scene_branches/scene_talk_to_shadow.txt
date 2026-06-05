@@ -1,0 +1,11 @@
+[SCENE]: talk_to_shadow
+
+[TEXT_START]
+The hooded figure takes another step forward, the sound of his boots grinding against the broken glass. 
+
+"You always did have more mouth than sense, Ace," Dal's voice echoes, cold and mocking. 
+
+Mae grips the back of your jacket, her breath hitching in terror. You can feel her shaking against you. The dim moonlight barely catches the edges of Dal's silhouette, but the sheer presence of him fills the ruined room with an suffocating pressure. You tighten your posture, refusing to back down, but the exit behind him is completely blocked.
+[TEXT_END]
+
+[CHOICE]: Stand your ground -> final_confrontation

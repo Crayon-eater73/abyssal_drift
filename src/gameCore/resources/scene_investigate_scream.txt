@@ -1,0 +1,22 @@
+[SCENE]: investigate_scream
+
+[TEXT_START]
+Ace ran towards the scream. 
+
+"Mae! Mae! Where are you?!" Ace shouted. He stumbled through the wreckage of the night, pieces of the walls and ceilings had fallen onto the floor, becoming rubble. 
+
+“Mae! Please answer me!” Ace shrieked, climbing over debris.
+
+“Ace! Hurry! Somethings down here!” Mae screamed back.
+
+Ace felt relief that Mae was close, but that relief was quickly overcome by a wave of panic. He scrambled desperately, trying to reach Mae before something happened. 
+
+Ace finally managed to make it to Mae, he was breathing heavily and shaking slightly.
+
+“Mae, Mae! What happened? Are you okay?!” Ace asked, giving Mae a once over for any injuries.
+
+Mae hugged Ace, clinging to him. “I thought I heard someone. There was whispering and things being thrown around.”
+[TEXT_END]
+
+[CHOICE]: Stand ground and confront the whisperer -> confront_threat
+[CHOICE]: Grab Mae and find a way out -> escape_wreckage

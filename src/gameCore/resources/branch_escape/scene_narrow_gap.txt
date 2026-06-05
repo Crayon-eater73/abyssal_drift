@@ -1,0 +1,9 @@
+[SCENE]: narrow_gap
+
+[TEXT_START]
+You reach back through the narrow fracture in the wall, your fingers locking around Mae’s wrist. With a sharp, desperate pull, you yank her through the tight gap just as a heavy chunk of masonry crashes down right where she had been standing. 
+
+Mae stumbles into your arms, coughing from the thick dust cloud. You turn around to sprint down the corridor, but the path ahead terminates in a massive, impassable cave-in. The sound of footsteps behind you signals that your brief head start has completely evaporated.
+[TEXT_END]
+
+[CHOICE]: Pull Mae through to safety -> final_confrontation

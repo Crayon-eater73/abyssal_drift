@@ -1,19 +1,23 @@
-package mainBackground;
+package mainBackground.mainMenu;
+
 
 import java.awt.*;
 import javax.swing.*;
 
-public class ContinuePanel extends JPanel {
+import mainBackground.Panel;
+import mainBackground.frame;
+
+public class loadPanel extends JPanel {
 
     private frame window;
 
-    public ContinuePanel(frame window) {
+    public loadPanel(frame window) {
         this.window = window;
 
         setPreferredSize(new Dimension(800, 600));
         setBackground(Color.BLACK);
 
-        JLabel label = new JLabel("Continue Game");
+        JLabel label = new JLabel("Where do I need to strt from?");
         label.setForeground(Color.WHITE);
         label.setFont(new Font("Serif", Font.BOLD, 32));
         add(label);

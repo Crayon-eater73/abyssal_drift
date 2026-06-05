@@ -1,0 +1,9 @@
+[SCENE]: climb_debris
+
+[TEXT_START]
+You scramble over the crest of the loose plaster and broken wood, dragging Mae up behind you. Your boots slip on the dusty surface, sending a cascade of small stones rattling into the darkness below. 
+
+You drop down onto the other side of the mound, hoping for an open corridor, but instead, you find yourself cornered in a dead-end section of the ruined structure. The walls here are completely intact, locking you into a tight, inescapable space as the shadow looms over the crest of the debris pile behind you.
+[TEXT_END]
+
+[CHOICE]: Scramble over the top -> final_confrontation
