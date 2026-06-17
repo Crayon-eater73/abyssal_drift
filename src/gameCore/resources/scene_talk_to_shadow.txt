@@ -8,4 +8,4 @@ The hooded figure takes another step forward, the sound of his boots grinding ag
 Mae grips the back of your jacket, her breath hitching in terror. You can feel her shaking against you. The dim moonlight barely catches the edges of Dal's silhouette, but the sheer presence of him fills the ruined room with an suffocating pressure. You tighten your posture, refusing to back down, but the exit behind him is completely blocked.
 [TEXT_END]
 
-[CHOICE]: Stand your ground -> final_confrontation
+[CHOICE]: Stand your ground -> scene_final_confrontation.txt

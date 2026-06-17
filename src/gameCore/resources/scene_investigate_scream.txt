@@ -18,5 +18,5 @@ Ace finally managed to make it to Mae, he was breathing heavily and shaking slig
 Mae hugged Ace, clinging to him. “I thought I heard someone. There was whispering and things being thrown around.”
 [TEXT_END]
 
-[CHOICE]: Stand ground and confront the whisperer -> confront_threat
-[CHOICE]: Grab Mae and find a way out -> escape_wreckage
+[CHOICE]: Stand ground and confront the whisperer -> scene_confront_threat.txt
+[CHOICE]: Grab Mae and find a way out -> scene_escape_wreckage.txt

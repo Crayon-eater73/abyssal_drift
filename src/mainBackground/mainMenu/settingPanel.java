@@ -10,6 +10,7 @@ public class settingPanel extends JPanel {
 
     private frame window;
 
+    //This is the settings window and is supposed to have a back button
     public settingPanel(frame window) {
         this.window = window;
 

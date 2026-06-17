@@ -7,5 +7,5 @@ Ace froze the moment he heard Mae's scream.
 What should he do?
 [TEXT_END]
 
-[CHOICE]: Hide behind a desk -> ace_hides
-[CHOICE]: Run and investigate -> investigate_scream
+[CHOICE]: Hide behind a desk -> scene_ace_hides.txt
+[CHOICE]: Run and investigate -> scene_investigate_scream.txt

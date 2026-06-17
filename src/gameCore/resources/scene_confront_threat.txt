@@ -8,5 +8,5 @@ Ace steps in front of Mae, his heart hammering against his ribs. He stares into 
 The whispering stops instantly. For a second, the silence is deafening. Then, a heavy piece of rubble shifts, and a shadow detaches itself from the far wall, stepping into the dim light.
 [TEXT_END]
 
-[CHOICE]: Call out to the figure -> talk_to_shadow
-[CHOICE]: Stand defensive and look for an exit -> evaluate_surroundings
+[CHOICE]: Call out to the figure -> scene_talk_to_shadow.txt
+[CHOICE]: Stand defensive and look for an exit -> scene_evaluate_surroundings.txt

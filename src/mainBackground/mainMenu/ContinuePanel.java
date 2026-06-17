@@ -9,6 +9,7 @@ public class ContinuePanel extends JPanel {
 
     private frame window;
 
+    //whoile thing is a new panel and what would happem if you clicked them
     public ContinuePanel(frame window) {
         this.window = window;
 

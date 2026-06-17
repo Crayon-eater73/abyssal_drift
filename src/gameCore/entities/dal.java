@@ -1,11 +1,9 @@
 package gameCore.entities;
 
-public class dal {
-    
+public class dal extends enemyBehavior {
+    private int threatlevel;
+    private boolean isVisibleToPlayer;
 }
 
-/*extends charater
-extends ememnyBehavior
-
-private int threatlevel
+/*private int threatlevel
 private boolean isVisibleToPlayer*/

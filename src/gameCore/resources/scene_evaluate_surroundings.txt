@@ -6,4 +6,4 @@ Your eyes dart left and right, scanning the collapsed drywall and shattered supp
 To your left, a slight opening leads toward what used to be the main hallway, but Dal anticipates your gaze. He shifts his weight, effortlessly stepping into the line of sight and cutting off the potential escape route before you can even make a move. Every tactical angle you calculate leads right back to him.
 [TEXT_END]
 
-[CHOICE]: Try to maneuver around them -> final_confrontation
+[CHOICE]: Try to maneuver around them -> scene_final_confrontation.txt

@@ -6,5 +6,5 @@
 They turn back toward the debris-filled hallway, but the shifting sounds behind them grow louder, accompanied by the distinct sound of footsteps scrambling over the rubble. Panic surges through Ace as he pulls Mae along, their path partially blocked by the fallen ceiling.
 [TEXT_END]
 
-[CHOICE]: Squeeze through a narrow gap in the wall -> narrow_gap
-[CHOICE]: Climb back over the main pile of debris -> climb_debris
+[CHOICE]: Squeeze through a narrow gap in the wall -> scene_narrow_gap.txt
+[CHOICE]: Climb back over the main pile of debris -> scene_climb_debris.txt

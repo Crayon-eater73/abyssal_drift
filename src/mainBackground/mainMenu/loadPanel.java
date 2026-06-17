@@ -3,7 +3,6 @@ package mainBackground.mainMenu;
 
 import java.awt.*;
 import javax.swing.*;
-
 import mainBackground.Panel;
 import mainBackground.frame;
 
@@ -11,6 +10,7 @@ public class loadPanel extends JPanel {
 
     private frame window;
 
+    //This panel is supposed to load the game and have a back button
     public loadPanel(frame window) {
         this.window = window;
 

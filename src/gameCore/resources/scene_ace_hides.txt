@@ -10,4 +10,4 @@ Ace bolts to the nearest hiding spot, behind a desk. His hands are trembling, hi
 Ace was terrified of what he might walk into. Was Mae okay? Had something happened to her? Was she—no, she can't be. She just can't be. Ace started picking up the pace, a feeling of protectiveness washed over him as he went down a rabbit hole of his own thoughts. It had terrified him. Ace needed to know what happened to cause Mae to scream like that.
 [TEXT_END]
 
-[CHOICE]: Push forward and investigate -> investigate_scream
+[CHOICE]: Push forward and investigate -> scene_investigate_scream.txt
