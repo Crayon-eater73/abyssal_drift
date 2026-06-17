@@ -7,19 +7,20 @@ public class frame extends JFrame {
 
     public frame() {
         super("Abyssal Drift");
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(true);
 
+        // Load the first panel (main menu)
         Panel panel = new Panel(this);
         setContentPane(panel);
-
-        panel.setBounds(0, 0, 800, 600);  // REQUIRED FOR CLICKING
 
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
     }
 
+    // Switch to a different panel
     public void changePanel(JPanel newPanel) {
         setContentPane(newPanel);
         revalidate();

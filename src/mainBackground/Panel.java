@@ -12,12 +12,6 @@ public class Panel extends JPanel {
 
     private frame window;
 
-    public JLabel newGame;
-    public JLabel cont;
-    public JLabel load;
-    public JLabel settings;
-    public JLabel quit;
-
     public Panel(frame window) {
         this.window = window;
 
@@ -25,34 +19,31 @@ public class Panel extends JPanel {
         setBackground(Color.BLACK);
         setLayout(null);
 
-        Font glazier48;
-        Font glazier32;
+        // Load custom fonts (fallback to Serif if missing)
+        Font titleFont;
+        Font menuFont;
 
         try {
             Font glazier = Font.createFont(
                 Font.TRUETYPE_FONT,
-                new File("src/mainBackground/fonts/GingkoFraktur.ttf"));
-            glazier48 = glazier.deriveFont(Font.BOLD, 48f);
-            glazier32 = glazier.deriveFont(Font.PLAIN, 32f);
-
+                new File("src/mainBackground/fonts/GingkoFraktur.ttf")
+            );
+            titleFont = glazier.deriveFont(Font.BOLD, 48f);
+            menuFont = glazier.deriveFont(Font.PLAIN, 32f);
         } catch (Exception e) {
-            glazier48 = new Font("Serif", Font.BOLD, 48);
-            glazier32 = new Font("Serif", Font.PLAIN, 32);
+            titleFont = new Font("Serif", Font.BOLD, 48);
+            menuFont = new Font("Serif", Font.PLAIN, 32);
         }
 
+        // Title
         JLabel title = new JLabel("Abyssal Drift");
-        title.setFont(glazier48);
+        title.setFont(titleFont);
         title.setForeground(Color.RED);
         title.setBounds(50, 80, 600, 60);
         add(title);
 
-        // NEW GAME
-        newGame = new JLabel("New Game");
-        newGame.setFont(glazier32);
-        newGame.setForeground(Color.WHITE);
-        newGame.setBounds(50, 180, 300, 40);
-        add(newGame);
-
+        // New Game
+        JLabel newGame = createMenuLabel("New Game", menuFont, 180);
         newGame.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
@@ -60,63 +51,50 @@ public class Panel extends JPanel {
             }
         });
 
-        // CONTINUE
-        cont = new JLabel("Continue");
-        cont.setFont(glazier32);
-        cont.setForeground(Color.WHITE);
-        cont.setBounds(50, 230, 300, 40);
-        add(cont);
-
+        // Continue
+        JLabel cont = createMenuLabel("Continue", menuFont, 230);
         cont.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
-                System.out.println("Continue clicked");
                 window.changePanel(new ContinuePanel(window));
             }
         });
 
-        // LOAD GAME
-        load = new JLabel("Load Game");
-        load.setFont(glazier32);
-        load.setForeground(Color.WHITE);
-        load.setBounds(50, 280, 300, 40);
-        add(load);
-
+        // Load Game
+        JLabel load = createMenuLabel("Load Game", menuFont, 280);
         load.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
-                System.out.println("Load Game clicked");
                 window.changePanel(new loadPanel(window));
             }
         });
 
-        // SETTINGS
-        settings = new JLabel("Settings");
-        settings.setFont(glazier32);
-        settings.setForeground(Color.WHITE);
-        settings.setBounds(50, 330, 300, 40);
-        add(settings);
-
+        // Settings
+        JLabel settings = createMenuLabel("Settings", menuFont, 330);
         settings.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
-                System.out.println("Settings clicked");
                 window.changePanel(new settingPanel(window));
             }
         });
 
-        // QUIT
-        quit = new JLabel("Quit");
-        quit.setFont(glazier32);
-        quit.setForeground(Color.WHITE);
-        quit.setBounds(50, 380, 300, 40);
-        add(quit);
-
+        // Quit
+        JLabel quit = createMenuLabel("Quit", menuFont, 380);
         quit.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent e) {
                 System.exit(0);
             }
         });
+    }
+
+    // Helper method to reduce repeated code
+    private JLabel createMenuLabel(String text, Font font, int y) {
+        JLabel label = new JLabel(text);
+        label.setFont(font);
+        label.setForeground(Color.WHITE);
+        label.setBounds(50, y, 300, 40);
+        add(label);
+        return label;
     }
 }

@@ -4,7 +4,6 @@ import gameCore.engine.gameEngine;
 import gameCore.story.choice;
 import gameCore.story.sceneData;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import javax.swing.*;
 import mainBackground.Panel;
 import mainBackground.frame;
@@ -19,17 +18,6 @@ public class gamePanel extends JPanel {
 
         setPreferredSize(new Dimension(800, 600));
         setBackground(Color.BLACK);
-
-        // Keyboard Binding for ESC Key
-        this.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
-            .put(KeyStroke.getKeyStroke("ESCAPE"), "showSettingsPopup");
-
-        this.getActionMap().put("showSettingsPopup", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                showSettingsPopup();
-            }
-        });
 
         // Title label
         JLabel label = new JLabel("\"Let me start from the beginning...\"");
@@ -48,30 +36,14 @@ public class gamePanel extends JPanel {
         add(back);
     }
 
-    // Popup Window for ESC key
-    private void showSettingsPopup() {
-        JDialog settingsDialog = new JDialog(window, "Settings", Dialog.ModalityType.APPLICATION_MODAL);
-        settingsDialog.setSize(500, 400);
-        settingsDialog.setLocationRelativeTo(window);
-        settingsDialog.setLayout(new BorderLayout());
-
-        settingsDialog.add(new settingPanel(window), BorderLayout.CENTER);
-
-        JButton closeButton = new JButton("Resume Game");
-        closeButton.addActionListener(event -> settingsDialog.dispose());
-        settingsDialog.add(closeButton, BorderLayout.SOUTH);
-
-        settingsDialog.setVisible(true);
-    }
-
     // Start the game and load the first scene
     private void startGame() {
         engine = new gameEngine();
         sceneData firstScene = engine.startGame();
-        displayScene(firstScene); 
-        // show text and choices
+        displayScene(firstScene);
     }
 
+    // Display scene text and choices
     private void displayScene(sceneData scene) {
         removeAll();
         setLayout(new BorderLayout());
@@ -93,15 +65,16 @@ public class gamePanel extends JPanel {
             btn.addActionListener(e -> loadNextScene(c.getNextScenePath()));
             choicesPanel.add(btn);
         }
+
         add(choicesPanel, BorderLayout.SOUTH);
 
         revalidate();
         repaint();
     }
 
+    // Load next scene file
     private void loadNextScene(String fileName) {
         sceneData next = engine.loadScene("src/gameCore/resources/" + fileName);
         displayScene(next);
-}
-
+    }
 }
