@@ -257,7 +257,8 @@ I made this so the openeing size could be smaller, but you could fullscreen it
 ## window.
 Anything with window. is refering back to the new window we created called JFrame window = new JFrame(); It's like, I want this to be visiable, or I want the Title to be set to this by using this string. 
 
-
+## window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+This just makes it so we can actually close the window properly instead of having to manually close the new window.
 
 ## MIT License
 
@@ -280,6 +281,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-This just makes it so we can actually close the window properly instead of having to manually close the new window.
